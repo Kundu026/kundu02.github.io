@@ -1,42 +1,108 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Abhi Kundu | Home  </title>
+<style> 
+* {
+    box-sizing: border-box;
+}
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+header {
+    padding: 40px;
+    background-color: rgb(17, 124, 143);
+}
 
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    padding: 20px;
+}
+
+section:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+section {
+    min-height: 100vh;
+}
+
+video {
+    padding: 10px;
+}
+
+iframe {
+height: 75vh;
+}
+
+img {
+    padding: 10px;
+}
+
+section h5 {
+    margin: 40px;
+}
+
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+</style>
+</head>
+<body>
+<header>
+<p><img src="https://i.ibb.co/tm8JBXm/eren.jpg" ; width="55%">
+<h2> Abhi Kundu </h2> </p> </header>
+<nav> 
+<a href="#"> Home </a>
+<a href="#" >Profile </a>
+<a href="#" > User Info</a>
+<a href="#" > Important Instructions </a>
+<a href="#" > SignUp/Login</a> 
+</nav>
+<main>
+<section>
+<p > <marquee style="color:red"> <b>Freedom! </b> </marquee> </p>
+<img src="https://i.ibb.co/C5wpTvc/eren02.jpg" ; width="66%">
+<section>
+<a href="https://i.ibb.co/M7ZnRgt/onepiecech02.jpg">  One Piece Manga Chapter 02 </a>
+
+</section>
+</main>
+</body>
+</html>
